@@ -107,7 +107,7 @@ func (s *Web) getReader(r *http.Request) (io.Reader, error) {
 	if err != nil {
 		return nil, errors.Errorf("Failed to get width")
 	}
-	g := s.gp.Get(sURL, format, width, infoHash, path)
+	g := s.gp.Get(sURL, format, width, infoHash, path, r.URL.Path)
 	rr, err := g.Get()
 	if err != nil {
 		return nil, errors.Wrapf(err, "Failed to get reader")

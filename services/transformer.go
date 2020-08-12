@@ -20,8 +20,6 @@ import (
 type Transformer struct {
 	sourceURL string
 	format    string
-	infoHash  string
-	path      string
 	width     int
 	inited    bool
 	b         []byte
@@ -30,9 +28,8 @@ type Transformer struct {
 }
 
 // NewTransformer initializes new Transformer instance
-func NewTransformer(sourceURL string, format string, width int, infoHash string, path string) *Transformer {
-	return &Transformer{sourceURL: sourceURL, format: format, width: width,
-		infoHash: infoHash, path: path}
+func NewTransformer(sourceURL string, format string, width int) *Transformer {
+	return &Transformer{sourceURL: sourceURL, format: format, width: width}
 }
 
 func (s *Transformer) get() ([]byte, error) {

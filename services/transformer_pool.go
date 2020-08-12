@@ -23,9 +23,9 @@ func NewTransformerPool() *TransformerPool {
 }
 
 // Get gets Transformer
-func (s *TransformerPool) Get(sourceURL string, format string, width int, infoHash string, path string) *Transformer {
-	key := fmt.Sprintf("%v%v%v%v", format, width, infoHash, path)
-	v, _ := s.sm.LoadOrStore(key, NewTransformer(sourceURL, format, width, infoHash, path))
+func (s *TransformerPool) Get(sourceURL string, format string, width int, infoHash string, path string, p string) *Transformer {
+	key := fmt.Sprintf("%v%v%v%v%v", format, width, infoHash, path, p)
+	v, _ := s.sm.LoadOrStore(key, NewTransformer(sourceURL, format, width))
 	t, tLoaded := s.timers.LoadOrStore(key, time.NewTimer(s.expire))
 	timer := t.(*time.Timer)
 	if !tLoaded {
