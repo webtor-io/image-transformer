@@ -1,4 +1,5 @@
 # github.com/aws/aws-sdk-go v1.32.9
+## explicit; go 1.11
 github.com/aws/aws-sdk-go/aws
 github.com/aws/aws-sdk-go/aws/arn
 github.com/aws/aws-sdk-go/aws/awserr
@@ -45,19 +46,23 @@ github.com/aws/aws-sdk-go/service/sts/stsiface
 # github.com/bakins/logrus-middleware v0.0.0-20180426214643-ce4c6f8deb07
 ## explicit
 github.com/bakins/logrus-middleware
-# github.com/chai2010/webp v1.1.0
+# github.com/bakins/test-helpers v0.0.0-20141028124846-af83df64dc31
 ## explicit
 # github.com/cpuguy83/go-md2man/v2 v2.0.0
+## explicit; go 1.12
 github.com/cpuguy83/go-md2man/v2/md2man
 # github.com/dsnet/compress v0.0.1
-## explicit
+## explicit; go 1.9
 github.com/dsnet/compress
 github.com/dsnet/compress/bzip2
 github.com/dsnet/compress/bzip2/internal/sais
 github.com/dsnet/compress/internal
 github.com/dsnet/compress/internal/errors
 github.com/dsnet/compress/internal/prefix
+# github.com/frankban/quicktest v1.14.6
+## explicit; go 1.13
 # github.com/go-redis/redis v6.15.8+incompatible
+## explicit
 github.com/go-redis/redis
 github.com/go-redis/redis/internal
 github.com/go-redis/redis/internal/consistenthash
@@ -66,6 +71,7 @@ github.com/go-redis/redis/internal/pool
 github.com/go-redis/redis/internal/proto
 github.com/go-redis/redis/internal/util
 # github.com/golang/protobuf v1.3.1
+## explicit
 github.com/golang/protobuf/proto
 github.com/golang/protobuf/protoc-gen-go/descriptor
 github.com/golang/protobuf/ptypes
@@ -75,13 +81,14 @@ github.com/golang/protobuf/ptypes/timestamp
 # github.com/golang/snappy v0.0.1
 ## explicit
 github.com/golang/snappy
+# github.com/google/go-cmp v0.6.0
+## explicit; go 1.13
 # github.com/jmespath/go-jmespath v0.3.0
+## explicit; go 1.14
 github.com/jmespath/go-jmespath
 # github.com/joonix/log v0.0.0-20200409080653-9c1d2ceb5f1d
-## explicit
+## explicit; go 1.12
 github.com/joonix/log
-# github.com/konsorten/go-windows-terminal-sequences v1.0.3
-github.com/konsorten/go-windows-terminal-sequences
 # github.com/mholt/archiver v3.1.1+incompatible
 ## explicit
 github.com/mholt/archiver
@@ -97,6 +104,10 @@ github.com/nickalie/go-webpbin
 # github.com/nwaples/rardecode v1.1.0
 ## explicit
 github.com/nwaples/rardecode
+# github.com/onsi/ginkgo v1.8.0
+## explicit
+# github.com/onsi/gomega v1.5.0
+## explicit
 # github.com/pierrec/lz4 v2.5.2+incompatible
 ## explicit
 github.com/pierrec/lz4
@@ -105,32 +116,38 @@ github.com/pierrec/lz4/internal/xxh32
 ## explicit
 github.com/pkg/errors
 # github.com/russross/blackfriday/v2 v2.0.1
+## explicit
 github.com/russross/blackfriday/v2
 # github.com/shurcooL/sanitized_anchor_name v1.0.0
-github.com/shurcooL/sanitized_anchor_name
-# github.com/sirupsen/logrus v1.6.0
 ## explicit
+github.com/shurcooL/sanitized_anchor_name
+# github.com/sirupsen/logrus v1.8.3
+## explicit; go 1.13
 github.com/sirupsen/logrus
 # github.com/ulikunitz/xz v0.5.7
-## explicit
+## explicit; go 1.12
 github.com/ulikunitz/xz
 github.com/ulikunitz/xz/internal/hash
 github.com/ulikunitz/xz/internal/xlog
 github.com/ulikunitz/xz/lzma
 # github.com/urfave/cli v1.22.4
-## explicit
+## explicit; go 1.11
 github.com/urfave/cli
 # github.com/webtor-io/common-services v0.0.0-20200624203531-dfc5c3497336
-## explicit
+## explicit; go 1.14
 github.com/webtor-io/common-services
-# github.com/webtor-io/video-thumbnails-generator v0.0.0-20200805212449-3daac2eefdf2
-## explicit
 # github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8
 ## explicit
 github.com/xi2/xz
-# golang.org/x/sys v0.0.0-20200622214017-ed371f2e16b4
-golang.org/x/sys/internal/unsafeheader
+# golang.org/x/image v0.46.0
+## explicit; go 1.26.0
+# golang.org/x/net v0.58.0
+## explicit; go 1.25.0
+# golang.org/x/sys v0.48.0
+## explicit; go 1.26.0
 golang.org/x/sys/unix
+golang.org/x/sys/windows
 # google.golang.org/genproto v0.0.0-20190522204451-c2c4e71fbf69
+## explicit
 google.golang.org/genproto/googleapis/api/annotations
 google.golang.org/genproto/googleapis/logging/type
